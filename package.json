@@ -1,0 +1,48 @@
+{
+  "name": "lucia-qwik-demo",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.types": "tsc --incremental --noEmit",
+    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "preview": "qwik build preview && vite preview --open",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "latest",
+    "@builder.io/qwik-city": "latest",
+    "@types/eslint": "latest",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-plugin-qwik": "latest",
+    "postcss": "latest",
+    "prettier": "latest",
+    "prisma": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "undici": "latest",
+    "vite": "latest",
+    "vite-tsconfig-paths": "latest"
+  },
+  "dependencies": {
+    "@lucia-auth/adapter-prisma": "latest",
+    "@prisma/client": "latest",
+    "daisyui": "latest",
+    "lucia-auth": "latest"
+  }
+}
